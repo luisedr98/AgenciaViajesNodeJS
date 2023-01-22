@@ -1,11 +1,14 @@
 import express  from "express";
 import router from "./router/index.js";
 import db from "./config/database.js";
+import dotenv from "dotenv";
 
+// * importando express y las variables de entorno
 const app = express();
+dotenv.config();
 
 // * configuracion del puerto
-const port = process.env.PORT || 4000;
+const port = process.env.APP_PORT || 4000;
 
 //* conectar a la base de datos
 db.authenticate()
@@ -34,5 +37,5 @@ app.use(express.static("public"))
 app.use('/', router);
 
 app.listen(port, ()=>{
-    console.log('Iniciando la app');
+    console.log('Iniciando la app en el puerto:' + port);
 })
