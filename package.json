@@ -1,0 +1,23 @@
+{
+  "name": "proyectoagencianodejs",
+  "version": "1.0.0",
+  "description": "ProyectoAgenciaViajes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Luis Dominguez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.0.1",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
