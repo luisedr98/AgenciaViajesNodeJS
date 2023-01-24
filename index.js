@@ -8,7 +8,7 @@ const app = express();
 dotenv.config();
 
 // * configuracion del puerto
-const port = process.env.APP_PORT || 4000;
+const port = process.env.APP_PORT;
 
 //* conectar a la base de datos
 db.authenticate()
