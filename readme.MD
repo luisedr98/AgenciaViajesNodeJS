@@ -23,5 +23,5 @@ El siguiente proyecto fue realizado mediante el uso de ExpressJs y NodeJs con un
  6. Para iniciar la aplicación se debe ejecutar el comando `npm run dev`
 
  ## **Notas**
-El numero de puerto en el que se ejecuta la aplicación se define en la variable de entorno `APP_PORT`. En el caso de no definir la variable usa el puerto 4000 
+El numero de puerto en el que se ejecuta la aplicación se define en la variable de entorno `PORT`. En el caso de no definir la variable usa el puerto 4000 
 
