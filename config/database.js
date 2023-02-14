@@ -23,6 +23,13 @@ const db = new Sequelize(process.env.DB_NAME,process.env.DB_USER, process.env.DB
         idle: 100000,
         evict: 2000,
     },
+    ssl: true,
+    dialectOptions : {
+        ssl : {
+            rejectUnauthorized: false
+        }
+    }
+    
 });
 
 export default db;
